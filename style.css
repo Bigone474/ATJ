@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+
+/* style.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mitr", sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://ahaslides.com/wp-content/uploads/2023/01/6296242_3186532-2048x1365.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2; /* ปรับความโปร่งใสตามต้องการ */
+  z-index: -1;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ) !important; /* ทำให้ navbar มีความโปร่งใสเล็กน้อย */
+  border-bottom: 1px solid #dddddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand img {
+  max-width: 100px;
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar .nav-link.active {
+  color: #333;
+}
+
+.navbar .form-control {
+  border-radius: 20px;
+}
+
+.navbar .btn-login {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+
+.navbar .btn-login:hover {
+  background-color: #333;
+}
+
+.icon-app,
+.icon-tv {
+  margin-right: 5px;
+}
+
+.navbar .flag-icon {
+  width: 25px;
+  margin-left: 5px;
+}
+
+.navbar .input-group-text {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("https://www.trueid.net/static/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Section */
+.card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card.post-card {
+  position: relative;
+}
+
+.position-absolute {
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Other Styles */
+textarea {
+  resize: none;
+}
+
+/* Register Form Styles */
+.logo-text {
+  text-align: center; /* จัดโลโก้ให้อยู่ตรงกลาง */
+  font-size: 24px; /* ขนาดของโลโก้ */
+  font-weight: bold; /* ความหนาของตัวอักษร */
+  margin-bottom: 20px; /* เพิ่มระยะห่างจากปุ่มลงทะเบียน */
+}
+
+.register-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.register-form .form-group {
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="tel"] {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.register-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-form button[type="submit"]:hover {
+  background-color: #d50000;
+}
+
+.register-form .login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.register-form .login-link a {
+  color: #f65013;
+  text-decoration: none;
+}
+
+.register-form .login-link a:hover {
+  text-decoration: underline;
+}
+.login-link {
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  margin-top: 15px; /* เพิ่มระยะห่างจากปุ่มลงทะเบียน */
+}
+
+/* ส่วนต้อนรับ */
+.atj-logo {
+  font-size: 1.5rem; /* ขนาดตัวอักษร */
+  font-weight: bold; /* ทำให้ตัวหนา */
+  color: #d0021b; /* สีแดงเข้ม */
+  font-family: "Mitr", sans-serif; /* ใช้ฟอนต์ Mitr แทน Arial */
+  letter-spacing: 2px; /* ระยะห่างระหว่างตัวอักษร */
+  text-transform: uppercase; /* เปลี่ยนเป็นตัวพิมพ์ใหญ่ */
+  position: relative; /* กำหนดตำแหน่ง */
+  transition: color 0.3s ease; /* เพิ่มเอฟเฟ็กต์การเปลี่ยนสี */
+}
+
+.atj-logo:hover {
+  color: #b5001a; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* ตกแต่งเพิ่มเติม */
+.atj-logo::before {
+  content: ""; /* ใช้สร้างเส้นใต้ */
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.3s ease;
+}
+
+.atj-logo:hover::before {
+  background-color: #f06408f5; /* เปลี่ยนสีเส้นใต้เมื่อ hover */
+  height: 3px; /* เปลี่ยนความหนาเมื่อ hover */
+}
+
+.btn {
+  background-color: red;
+  color: #fff;
+  padding: 10px 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    color: #d50000;
+    background-color: #f8f9fa;
+    border-color: #e9ecef;
+}
+.btn-primary {
+  /* สไตล์สำหรับปุ่มหลัก */
+  background-color: #fff;
+  color: red;
+  border-color: red;
+  
+}
+
+.btn-outline-primary {
+  /* สไตล์สำหรับปุ่มขอบ */
+  border-color: #fff;
+
+}
+.welcome-section {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* ทำให้พื้นหลังของส่วนต้อนรับมีความโปร่งใส */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section__title {
+  font-size: 3.5rem; /* ปรับขนาดตัวอักษรให้เล็กลงเล็กน้อย */
+  font-weight: 500;
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.welcome-section__subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.welcome-section__text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.welcome-section__signup-btn {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.welcome-section__signup-btn:hover {
+  background-color: #d50000;
+  border-color: #d50000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(213, 0, 0, 0.3);
+}
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #d0021b;
+  margin-bottom: 20px;
+}
+
+.login-container .btn-login {
+  background-color: #d0021b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  border: none;
+  width: 100%;
+}
+
+.login-container .btn-login:hover {
+  background-color: #b5001a;
+}
+
+.login-container .form-control {
+  border-radius: 50px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.welcome-section__signup-btn {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.welcome-section__signup-btn:hover {
+  background-color: #d50000;
+  border-color: #d50000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(213, 0, 0, 0.3);
+}
+
+/* เพิ่ม CSS สำหรับเมนูด้านซ้าย */
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.sidebar .cover-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.sidebar .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+  background-color: #f0f2f5;
+}
+
+.sidebar .profile-info {
+  margin-top: 45px;
+}
+
+.sidebar .profile-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar .menu-item {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.sidebar .menu-item:hover,
+.sidebar .menu-item.active {
+  background-color: #e9ecef;
+}
+
+/* CSS ที่มีอยู่เดิมสำหรับส่วนเนื้อหาหลัก */
+/* ... (คงไว้ตามเดิม) ... */
+.profile-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.profile-header {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.profile-cover-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile-avatar {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  bottom: -84px;
+  left: 15px;
+}
+
+.profile-info {
+  padding-left: 200px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-username {
+  font-size: 14px;
+  color: #65676b;
+  margin-bottom: 10px;
+}
+
+.profile-bio {
+  font-size: 14px;
+  color: #1c1e21;
+  margin-bottom: 15px;
+}
+
+.profile-edit-btn {
+  background-color: #e4e6eb;
+  color: #050505;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-edit-btn:hover {
+  background-color: #d8dadf;
+}
+
+.profile-details {
+  margin-top: 20px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.profile-details h6 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #050505;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 15px;
+  color: #65676b;
+  margin-bottom: 5px;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.camera-icon i {
+  color: #1c1e21;
+}
